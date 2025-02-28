@@ -1,0 +1,38 @@
+version: '3'
+services:
+  movies: 
+    image: vinay1244/movies:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  d2h:
+    image: vinay1244/d2h:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  flight:
+    image: vinay1244/flight:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  train:
+    image: vinay1244/train:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: vinay1244/recharge:latest
+    ports:
+      - "94:80"
+    deploy:
+      replicas: 3
+
+

@@ -1,0 +1,28 @@
+version: '3'
+services:
+  movies: 
+    build: ./movies
+    ports:
+      - "90:80"
+
+  d2h:
+    build: ./d2h
+    ports:
+      - "91:80"
+
+  flight:
+    build: ./flight
+    ports:
+      - "92:80"
+
+  train:
+    build: ./train
+    ports:
+      - "93:80"
+
+  recharge:
+    build: ./recharge
+    ports:
+      - "94:80"
+
+
